@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <!-- Update these with your own fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Poiret -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Josefin+Sans&family=Fira+Code&family=Ubuntu&family=Tenor+Sans&family=Poiret+One&display=swap" rel="stylesheet">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">  -->
+
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+    <script src="script.js" async></script>
+    <script src="modal.js" async></script>
+    <script src="contact.js" async></script>
+
+    <title>Dev Christy Volosin Portfolio Website</title>
+  </head>
+  <body>
+    <header id="home">
+      
+      <div class="logo">
+        <img src="img/m.CV_logo_without-border115px69p-1.png" alt="logo with text" />
+      </div>
+      <!-- --- -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- --- -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#tools" class="nav__link">Tools I Use</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- --- -->
+    </header>
+
+    <!-- Introduction -->
+    
+    
+    <section class="intro">
+      <h1 class="section__title section__title--intro translate" id="parallax-images" data-speed="0.2">
+        Hi, I am <br><span>Christy<span class="span2">Volosin</span></span>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro translate" id="parallax-images" data-speed="0.2">front-end dev</p>
+      <img
+        src="img/ChristyVolosin.jpg"
+        alt="a picture of Christy Volosin smiling"
+        class="intro__img translate" id="parallax-images" data-speed="0.2"
+      />
+      <div class="contact-info-top">
+        
+        <button class="btn" type="submit"><a href="TestDoc.docx" download="TestDoc" class="btn__link">Download Resume</a></button>
+
+        <a href="mailto:christy.volosin2@gmail.com" class="contact-info__link"
+        >test@email.com</a
+      >
+
+      <!-- <div class="social-icons">
+        <a class="" href="https://www.linkedin.com/in/christyvolosin/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="" href="https://github.com/ChristVolo1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="" href="https://twitter.com/christyvolosin" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+      </div> -->
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/christyvolosin/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/ChristVolo1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/christyvolosin" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+
+      </div>
+      
+    </section>
+    <div class="intro-background">
+      <img src="img/woman-w-mountains-original-transparent-sky.png" class="mountains translate" id="parallax-images" data-speed="-0.2">
+       <!-- woman img was here -->
+    </div>
+    
+
+    <!-- My Services -->
+    
+
+    <section class="my-services" id="services">
+      
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel odio
+            quam sequi corporis magnam vero culpa, reiciendis repellendus
+            reprehenderit ut quae minus non libero possimus officia placeat
+            deleniti fugiat doloribus?
+          </p>
+        </div>
+        <!-- service -->
+
+        <div class="service">
+          <h3>Development</h3> <!-- said E-Commerce -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            doloribus quaerat dolor voluptas nihil quia aspernatur a rerum harum
+            quos ratione unde molestiae, consequatur ducimus ea eum. Id, facere
+            fugiat!
+          </p>
+        </div>
+        <!-- service -->
+
+        <div class="service">
+          <h3>WordPress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in
+            dolorum consequuntur, dolores molestias, necessitatibus rem iure,
+            nemo expedita quasi distinctio consectetur beatae modi quaerat
+            corporis aliquam. Recusandae, possimus error.
+          </p>
+        </div>
+        <!-- service -->
+      </div>
+      <!-- services -->
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about__border">
+    <div class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & developer based out of Rolla, Missouri
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero saepe
+          porro odit distinctio tempore aspernatur quibusdam accusamus ex
+          nostrum totam, dolor odio eum numquam quaerat iusto quos itaque
+          voluptatem maxime!
+        </p>
+      </div>
+    
+      <img
+        src="img/ChristyVolosin_2.jpg"
+        alt="Christy standing"
+        class="about-me__img"
+      />
+    
+  </div>
+  </section>
+    <!-- Tools I Use -->
+
+    <section class="tools-I-use" id="tools">
+      <h2 class="section__title section__title--tools">Tools I Use</h2>
+      <div class="tools">
+        <div class="tool-img">
+          <img src="img/HTML-logo.png" alt="html">
+        </div>
+        <div class="tool-img">
+          <img src="img/CSS-logo.png" alt="css">
+        </div>
+        <div class="tool-img">
+          <img src="img/JavaScript-logo1.png" alt="javascript">
+        </div>
+        <div class="tool-img github">
+          <img src="img/Github logo.png" alt="github">
+        </div>
+        <div class="tool-img">
+          <img src="img/java-logo.png" alt="java">
+        </div>
+        <div class="tool-img">
+          <img src="img/react-logo.png" alt="react">
+        </div>
+        <div class="tool-img">
+          <img src="img/bootstrap-logo.png" alt="bootstrap">
+        </div>
+        <div class="tool-img">
+          <img src="img/nodejs-logo.png" alt="node.js">
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work (Portfolio) -->
+    
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+
+        <!-- Portfolio item 1 -->
+        <div class="card item1">
+        <div class="imgBx">
+        <div class="portfolio__item">
+          <img src="img/MentorHelper-Capstone-Project-3.PNG" alt="" class="portfolio__img" />
+        </div>
+        </div>
+        <div class="content-1">
+        <h3>MentorHelper</h3>
+        <p>A membership site made with HTML, CSS, Javascript, Java, Node.js, Spring, and many more.</p>
+      </div>
+      <button class="portfolio-btn">Project Info</button>
+
+      <!-- Portfolio modal 1 -->
+      <div class="modal-bg">
+      <div class="portfolio-modal">
+        <div class="modal-container">
+          <div class="portfolio-imgBx">
+            <!-- <p>Hi</p> -->
+        <img class="portfolio-img" src="img/MentorHelper-Capstone-Project-3.PNG" alt="Mentorhelper project image">
+      </div>
+        <div class="portfolio-content">
+          <button class="modal-close">
+            <svg x="0px" y="0px"
+              viewBox="0 0 30 17" height="17" width="30">
+              <g transform="translate(-15 -15)">
+              <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3
+              35.8,16.5 37,17.7 	"/>
+              </g>
+          </svg>
+          </button>
+        <div class="portfolio-header">
+            <div class="portfolio-title-box">
+            <h3 class="portfolio-title">MentorHelper</h3>
+            <h4 class="portfolio-subtitle">Subtitle Goes Here</h4>
+          </div>
+        </div> <!-- /portfolio header -->
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo voluptatem dignissimos aperiam esse numquam tempora molestias facilis explicabo beatae qui expedita, molestiae at, sit a sed! Tenetur esse magnam laudantium dolore, aliquam obcaecati voluptatibus est totam ea sapiente.</p>
+          <div class="project-btn-div">
+          <button class="project-btn">View Project</button>
+        </div>
+        </div>
+      </div>
+      </div> <!-- modal-bg -->
+      </div><!-- end modal 1 -->
+      </div>
+
+        <!-- Portfolio item 2 -->
+        <div class="card item2">
+          <div class="imgBx">
+          <div class="portfolio__item">
+            <img src="img/Specz_Optical-4.PNG" alt="" class="portfolio__img" />
+          </div>
+          </div>
+          <div class="content-1">
+          <h3>Specz Optical</h3>
+          <p>A mock client site using HTML, CSS, and Javascript.</p>
+          
+        </div>
+        <button class="portfolio-btn">Project Info</button>
+
+        <!-- Portfolio modal 2 -->
+      <div class="modal-bg">
+        <div class="portfolio-modal">
+          <div class="modal-container">
+            <div class="portfolio-imgBx">
+              <!-- <p>Hi</p> -->
+          <img class="portfolio-img" src="img/Specz_Optical-4.PNG" alt="Specz Optical project image">
+        </div>
+          <div class="portfolio-content">
+            <button class="modal-close">
+              <svg x="0px" y="0px"
+                viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3
+                35.8,16.5 37,17.7 	"/>
+                </g>
+            </svg>
+            </button>
+          <div class="portfolio-header">
+              <div class="portfolio-title-box">
+              <h3 class="portfolio-title">Specz Optical</h3>
+              <h4 class="portfolio-subtitle">Subtitle Goes Here</h4>
+            </div>
+          </div> <!-- /portfolio header -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo voluptatem dignissimos aperiam esse numquam tempora molestias facilis explicabo beatae qui expedita, molestiae at, sit a sed! Tenetur esse magnam laudantium dolore, aliquam obcaecati voluptatibus est totam ea sapiente.</p>
+            <button class="project-btn">View Project</button>
+          </div>
+        </div>
+        </div> <!-- modal-bg -->
+        </div><!-- end modal 2 -->
+      </div>
+
+
+        <!-- Portfolio item 3 -->
+        <div class="card item3">
+          <div class="imgBx">
+          <div class="portfolio__item">
+            <img src="img/ChristyVolosin_Dev_Portfolio.png" alt="" class="portfolio__img" />
+          </div>
+          </div>
+          <div class="content-1">
+          <h3>This Portfolio</h3>
+          <p>My Developer Portfolio using HTML, CSS, and Javascript.</p>
+          
+        </div>
+        <button class="portfolio-btn">Project Info</button>
+
+        <!-- Portfolio modal 3 -->
+      <div class="modal-bg">
+        <div class="portfolio-modal">
+          <div class="modal-container">
+            <div class="portfolio-imgBx">
+              <!-- <p>Hi</p> -->
+          <img class="portfolio-img" src="img/ChristyVolosin_Dev_Portfolio.png" alt="Christy Volosin Portfolio project image">
+        </div>
+          <div class="portfolio-content">
+            <button class="modal-close">
+              <svg x="0px" y="0px"
+                viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3
+                35.8,16.5 37,17.7 	"/>
+                </g>
+            </svg>
+            </button>
+          <div class="portfolio-header">
+              <div class="portfolio-title-box">
+              <h3 class="portfolio-title">My Portfolio</h3>
+              <h4 class="portfolio-subtitle">Subtitle Goes Here</h4>
+            </div>
+          </div> <!-- /portfolio header -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo voluptatem dignissimos aperiam esse numquam tempora molestias facilis explicabo beatae qui expedita, molestiae at, sit a sed! Tenetur esse magnam laudantium dolore, aliquam obcaecati voluptatibus est totam ea sapiente.</p>
+            <button class="project-btn">View Project</button>
+          </div>
+        </div>
+        </div> <!-- modal-bg -->
+        </div><!-- end modal 3 -->
+        </div>
+      
+      </div>
+    </section>
+ 
+
+    <!-- Contact Me -->
+    
+    <section class="contact-me contact-background" id="contact">
+     <h2 class="section__title section__title--contact">Contact Me</h2>
+      <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, voluptatum? Adipisci, corporis ratione. Modi!
+          </p>
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon"  alt="">
+              <p>1234 Address Place, Rolla, MO 65401</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon"  alt="">
+              <p>test@email.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon"  alt="">
+              <p>(123) 456-7890</p>
+            </div>
+          </div>
+          
+          <div class="social-media">
+            <p>Connect with me:</p>
+            <div class="social-icons">
+              <a class="" href="https://www.linkedin.com/in/christyvolosin/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="" href="https://github.com/ChristVolo1" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a class="" href="https://twitter.com/christyvolosin" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <!-- action for form was action="index.html" -->
+          <form action="POST" data-netlify="true">
+            <h3 class="title">Contact Me!</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input">
+              <label for="">Name</label>
+              <span>Name</span> <!-- spans are for animation -->
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input">
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input">
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <!-- also had cols="30" rows="10" -->
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <div class="recaptcha" data-netlify-recaptcha="true"></div>
+            <input type="submit" value="Send" class="contact-btn">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer class="footer">
+      <a href="mailto:christy.volosin2@gmail.com" class="footer__link"
+        >test@email.com</a
+      >
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/christyvolosin/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/ChristVolo1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/christyvolosin" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">Copyright&copy;
+        <script>
+          document.write(new Date().getFullYear());
+      </script>
+      <br> Made with	&#10084; by Christy Volosin
+      </p>
+      
+      
+    </footer>
+  </body>
+</html>
