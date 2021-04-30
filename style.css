@@ -1133,7 +1133,7 @@ form {
 }
 
 .recaptcha {
-  margin: 5px;
+  margin: 5px 0 5px 2em;
 }
 
 .input {
