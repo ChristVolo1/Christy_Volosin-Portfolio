@@ -1132,6 +1132,10 @@ form {
   margin: 1rem 0 0rem 0;
 }
 
+.recaptcha {
+  margin: 5px;
+}
+
 .input {
   width: 100%;
   outline: none;
