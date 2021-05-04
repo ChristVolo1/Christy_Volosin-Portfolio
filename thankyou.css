@@ -34,9 +34,17 @@
   position: absolute;
   align-items: center;
   justify-content: center;
+  width: 300px;
   margin-top: 50vh;
   margin-left: 50vw;
   transform: translate(-50%, -50%);
   z-index: 5;
   cursor: pointer;
 }
+
+@media (min-width: 800px) {
+  .thank-you {
+    width: auto;
+  }
+}
+
