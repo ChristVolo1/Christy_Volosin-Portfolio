@@ -1128,15 +1128,10 @@ form {
   margin: 1rem 0 0rem 0;
 }
 
-.recaptcha {
-  /* border: 1px solid red;
-  background: lightgray;
-  text-align: left;
-  padding: 1em 0 1em 1em; */ /* These first 4 lines are just for local reference - Netlify adds the recaptcha - do not push to Github*/
-  margin: 5px 0 2px 0; /* left was 2em */
-
+/*.recaptcha {
+  margin: 5px 0 2px 0;
   transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
-}
+}*/
 
 .input {
   width: 90%;
@@ -1192,7 +1187,7 @@ textarea.input {
   outline: none;
   cursor: pointer;
   transition: 0.3s;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .contact-btn:hover {
