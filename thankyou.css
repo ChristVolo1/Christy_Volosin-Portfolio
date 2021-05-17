@@ -31,11 +31,12 @@
 }
 
 .thank-you {
-  position: fixed;
+  position: fixed; /* was absolute */
   align-items: center;
   justify-content: center;
   width: 300px;
-  top: 50%;
+  top: 50%; /* was margin-top: 50vh;
+  margin-left: 50vw; */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -47,4 +48,3 @@
     width: auto;
   }
 }
-
