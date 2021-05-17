@@ -9,6 +9,7 @@ header('Content-type: text/css');
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
+  --ff-subtitle: "Fira Code";
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -155,8 +156,8 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-light-orange);
+  font-family: var(--ff-subtitle);
   padding: 0.25em 1em;
-  font-family: "Fira Code";
   margin-bottom: 1em;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -282,12 +283,16 @@ header {
   transform: translateY(-3px) rotate(-90deg);
 }
 
+.nav-close {
+  display: none;
+}
+
 /* Intro section */
 
 .intro {
   position: relative;
   padding: 5em 2em 0 2em; /* top right bottom left - clockwise */
-  margin-bottom: 0; /* was 0 */
+  margin-bottom: 0;
   z-index: 100;
 }
 
@@ -432,8 +437,8 @@ span {
 
 @media (min-width: 600px) {
   /* TODO: Fix About Me orange background */
-  /* TODO: Make contact form handle submissions (added Netlify code to html) */
-  /* TODO: Add contact form validation - think it worked*/
+  /* TODO: Fix slow loading of pictures */
+  /* TODO: Fix contact form validation - only the email validation worked*/
   /* TODO: Write website copy */
   /* TODO: Fix modal close for last two portfolio items */
   /* TODO: Fix toggle menu button close Javascript */
@@ -525,8 +530,8 @@ span {
     width: min-content;
     margin: 0 auto;
     padding-top: 9em;
-    padding-bottom: 15%; /* was 15% */
-    grid-column-gap: 1em;
+    padding-bottom: 15%;
+    grid-column-gap: 1.5em; /* was 1.5em */
     grid-template-areas:
       "img title"
       "img subtitle";
@@ -547,7 +552,7 @@ span {
     position: relative;
     /* top: -7em; */
     left: -1.5em;
-    width: calc(100% + 1.5em);
+    width: calc(100% + 1em);
   }
 
   .contact-info-top {
@@ -558,7 +563,7 @@ span {
     align-items: center;
     justify-content: space-between;
     margin: -30px 0 0 5px; /* top was -30px and -25vh */
-    padding: 0 0 0 1.5em; /* was 1.5em */
+    padding: 0 0 0 1.5em;
   }
 
   .contact-info-top .btn {
@@ -689,10 +694,12 @@ span {
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
+    margin-right: 1em;
     left: -1em;
-    width: calc(100% - 2em);
+    width: calc(70% + 1em);
     padding-left: 1em;
-    padding-right: calc(100px - 1em); /* was  calc(200px + 4em) was -10em*/
+    padding-right: 30%; /* was  calc(200px + 4em)*/
+    
   }
 
   .about-me__img {
@@ -707,6 +714,10 @@ span {
     font-size: 1.3rem;
     padding: 0;
   }
+
+  /* .tool-img {
+    width: 100px;
+  } */
 
 }
 
@@ -749,7 +760,7 @@ span {
 }
 
 .tool-img {
-  width: 200px;
+  width: 150px;
   margin: 10px;
   padding: 10px;
   background: #f8f8ff;
@@ -758,26 +769,11 @@ span {
   box-shadow: 30px 0 40px rgba(0, 0, 0, 0.2), -30px 0px 40px rgba(0, 0, 0, 0.2);
 }
 
-.github {
-  padding: 19px 10px;
+.tool-img .github {
+  padding: 15px 0 15px 0; /* was 19px 10px */
 }
 
-/* @media (min-width: 620px){
-   
-} */
 
-
-/* @media (min-width: 1120px) {
-  .tools {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 1.5em;
-    grid-row-gap: 1em;
-    margin: 0;
-  }
-}
- */
 @media (min-width: 800px) { /* was 1132px */
   .tools {
     display: grid;
@@ -1133,13 +1129,17 @@ form {
 }
 
 .recaptcha {
-  margin: 5px 0 5px 0;
-  transform:scale(0.77);-webkit-transform:scale(0.77);
-  transform-origin:0 0;-webkit-transform-origin:0 0;
+  /* border: 1px solid red;
+  background: lightgray;
+  text-align: left;
+  padding: 1em 0 1em 1em; */ /* These first 4 lines are just for local reference - Netlify adds the recaptcha - do not push to Github*/
+  margin: 5px 0 2px 0; /* left was 2em */
+
+  transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
 }
 
 .input {
-  width: 100%;
+  width: 90%;
   outline: none;
   border: 2px solid #fafafa;
   background: none;
@@ -1562,4 +1562,19 @@ textarea.input {
     margin-block-start: 0em;
     margin-block-end: 0.5em;
   }
+}
+
+@media (min-width: 1132px) {
+  .tool-img {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .tool-img .js {
+    width: 190px;
+    margin: 0 auto;
+    align-self: center;
+}
+
 }
