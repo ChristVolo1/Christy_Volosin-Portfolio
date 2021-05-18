@@ -1,25 +1,19 @@
 const portfolioContainer = document.querySelector(".portfolio")
 
-portfolioContainer.addEventListener('click', e => {
-    /* console.log(e) */
-    /* e.preventDefault() */
+portfolioContainer.addEventListener("click", (e) => {
+  const modalToggle = e.target.closest(".portfolio-btn");
 
-    const modalToggle = e.target.closest('.portfolio-btn')
-    /* console.log(modalToggle) */
-    if (! modalToggle) return
+  if (!modalToggle) return;
 
-    const modal = modalToggle.nextElementSibling
-    /* console.log(modal) */
-    const closeButton = document.querySelector(".modal-close")
+  const modal = modalToggle.nextElementSibling;
 
-    modal.classList.add("is-open")
+  const closeButton = document.querySelectorAll(".modal-close");
 
-    /* closeButton.addEventListener('click', _ => {
-        modal.classList.remove('is-open') */
-        closeButton.forEach((button) => {
-            button.addEventListener("click", _ => {
-              modal.classList.remove("is-open");
-            });
+  modal.classList.add("is-open");
+
+  closeButton.forEach((button) => {
+    button.addEventListener("click", (_) => {
+      modal.classList.remove("is-open");
     });
-
+  });
 });
