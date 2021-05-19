@@ -283,9 +283,9 @@ header {
   transform: translateY(-3px) rotate(-90deg);
 }
 
-.nav-close {
+/* .nav-close {
   display: none;
-}
+} */
 
 /* Intro section */
 
@@ -908,9 +908,6 @@ span {
   z-index: 900;
 
   visibility: hidden;
-  opacity: 0;
-
-  /* display: none; */
 }
 
 .portfolio-modal {
@@ -925,15 +922,11 @@ span {
   
   overflow-y: scroll;
   
-  /* display: none; */ /* was display:none, opacity: 0, and visibility: hidden;*/
 }
 
 .is-open {
-  /* display: block; */
   visibility: visible;
-  opacity: 1;
 }
-
 
 
 .portfolio-header {
@@ -990,10 +983,6 @@ span {
   padding-bottom: 1em;
 }
 
-/* .portfolio-content .project-btn { */
-  /* margin-left: 15%; */  /* was 22.7%; 15% works for actual mobile but not browser mobile sizing*/
-  /* margin: 3em auto;
-} */
 
 .project-btn-div {
   width: 51%;
@@ -1069,7 +1058,7 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* The actual html tag, not the class */
+/* The actual form html tag, not the class */
 form {
   padding: 2.3rem 4.6rem 10px 2rem; /* was 2.3rem 2.2rem */
   z-index: 10;
@@ -1306,7 +1295,6 @@ textarea.input {
 /* ---Footer--- */
 
 .footer {
-  /* background: var(--clr-dark); */
   background: linear-gradient(135deg, var(--clr-light-purple), var(--clr-dark));
   border: 2px solid var(--clr-dark);
   color: var(--clr-accent);
@@ -1377,8 +1365,6 @@ textarea.input {
 
 @media (max-width: 850px) {
   .portfolio {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     flex-direction: column;
   }
 
@@ -1469,7 +1455,6 @@ textarea.input {
   .portfolio-modal {
     position: fixed;
     display: flex;
-    /* flex-flow: row; */
     align-items: center;
     justify-content: center;
     top: 50%;
@@ -1480,14 +1465,10 @@ textarea.input {
     width: 820px; /* was 93% */
     height: 60vh; /* was 60vh */
     overflow-y: hidden;
-
-    /* display: none; */
   }
 
  .is-open {
-    /* display: block; */
   visibility: visible;
-  opacity: 1;
   }
 
   .modal-container {
@@ -1513,7 +1494,6 @@ textarea.input {
 
   .portfolio-title-box {
     padding: 0; /* was 0.2em 0 0.2em 0em */
-    /* background: none; */
   }
 
   .portfolio-title {
