@@ -14,19 +14,12 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
-    <!-- Update these with your own fonts -->
-
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
-    <!-- Poiret -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Josefin+Sans&family=Fira+Code&family=Ubuntu&family=Tenor+Sans&family=Poiret+One&display=swap" rel="stylesheet">
-
-<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">  -->
-
-
+    <link href="https://fonts.googleapis.com/css2?&family=Tenor+Sans&family=Poiret+One&family=Fira+Code&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -95,18 +88,7 @@
         <a href="mailto:christy.volosin2@gmail.com" class="contact-info__link"
         >christy.volosin2@gmail.com</a
       >
-
-      <!-- <div class="social-icons">
-        <a class="" href="https://www.linkedin.com/in/christyvolosin/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a class="" href="https://github.com/ChristVolo1" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a class="" href="https://twitter.com/christyvolosin" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-      </div> -->
+     
 
       <ul class="social-list">
         <li class="social-list__item">
@@ -131,7 +113,7 @@
     </section>
     <div class="intro-background">
       <img src="img/woman-w-mountains-original-transparent-sky.png" class="mountains translate" id="parallax-images" data-speed="-0.2">
-       <!-- woman img was here -->
+       
     </div>
     
 
@@ -244,22 +226,24 @@
         <!-- Portfolio item 1 -->
         <div class="card item1">
         <div class="imgBx">
-        <div class="portfolio__item">
-          <img src="img/MentorHelper-Capstone-Project-3.PNG" alt="" class="portfolio__img" />
+        <div> <!-- was class="portfolio__item" -->
+          <img src="img/MentorHelper-Capstone-Project-3.PNG" alt="pic of MentorHelper app"/> <!-- was class="portfolio__img" -->
         </div>
         </div>
         <div class="content-1">
         <h3>MentorHelper</h3>
         <p>A membership site made with HTML, CSS, Javascript, Java, Node.js, Spring, and many more.</p>
       </div>
+      
       <button class="portfolio-btn">Project Info</button>
+
 
       <!-- Portfolio modal 1 -->
       <div class="modal-bg">
       <div class="portfolio-modal">
         <div class="modal-container">
           <div class="portfolio-imgBx">
-            <!-- <p>Hi</p> -->
+            
         <img class="portfolio-img" src="img/MentorHelper-Capstone-Project-3.PNG" alt="Mentorhelper project image">
       </div>
         <div class="portfolio-content">
@@ -272,29 +256,29 @@
               </g>
           </svg>
           </button>
-        <div class="portfolio-header">
+        <div class="portfolio-header"> <!-- /portfolio header -->
             <div class="portfolio-title-box">
             <h3 class="portfolio-title">MentorHelper</h3>
             <h4 class="portfolio-subtitle">Subtitle Goes Here</h4>
           </div>
-        </div> <!-- /portfolio header -->
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo voluptatem dignissimos aperiam esse numquam tempora molestias facilis explicabo beatae qui expedita, molestiae at, sit a sed! Tenetur esse magnam laudantium dolore, aliquam obcaecati voluptatibus est totam ea sapiente.</p>
-          <div class="project-btn-div">
-          <a href="https://www.remove.bg/">
-          <button class="project-btn">View Project</button>
-        </a>
         </div>
+          <p>I created this app in 2020 at a Java bootcamp in St. Louis called Claim Academy. This is a membership app that allows young and old people to connect to benefit older people who might not have the funds to get the help they need, by exchanging their knowledge for assistance. We were given the task of choosing what type of app we wanted to build, then we learned how to use quite a few different technologies to create them. The pandemic hit halfway through, making classtime interesting.</p>
+          <div class="project-btn-div modal-body">
+          <a href="https://www.remove.bg/" target="_blank">
+          <button class="project-btn" id="project-btn">View Project</button>
+          </a> <!-- had onclick="open_project()"  in the button for JS-->
+          </div>
         </div>
       </div>
-      </div> <!-- modal-bg -->
       </div><!-- end modal 1 -->
-      </div>
+      </div><!-- modal-bg -->
+      </div> <!-- end card 1 -->
 
         <!-- Portfolio item 2 -->
         <div class="card item2">
           <div class="imgBx">
-          <div class="portfolio__item">
-            <img src="img/Specz_Optical-4.PNG" alt="" class="portfolio__img" />
+          <div> <!-- was class="portfolio__item" -->
+            <img src="img/Specz_Optical-4.PNG" alt=""/> <!-- was class="portfolio__img"  -->
           </div>
           </div>
           <div class="content-1">
@@ -313,7 +297,7 @@
           <img class="portfolio-img" src="img/Specz_Optical-4.PNG" alt="Specz Optical project image">
         </div>
           <div class="portfolio-content">
-            <button class="modal-close">
+            <button class="modal-close"> <!-- data-dismiss="modal" didn't work -->
               <svg x="0px" y="0px"
                 viewBox="0 0 30 17" height="17" width="30">
                 <g transform="translate(-15 -15)">
@@ -328,9 +312,12 @@
               <h4 class="portfolio-subtitle">Subtitle Goes Here</h4>
             </div>
           </div> <!-- /portfolio header -->
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo voluptatem dignissimos aperiam esse numquam tempora molestias facilis explicabo beatae qui expedita, molestiae at, sit a sed! Tenetur esse magnam laudantium dolore, aliquam obcaecati voluptatibus est totam ea sapiente.</p>
-            <a href="https://speczoptical-by-christyvolosin.netlify.app/">
-            <button class="project-btn">View Project</button></a>
+            <p>I joined a free online coding bootcamp called Stackademic in March 2021. I created this site as an assignment in my 4th week of CSS class. I used HTML and CSS only in the original assigment, but added Javascript later for the toggle menu. At this point, I had not yet figured out how to make the intro image work with the card it was on, but overall I was satisfied with the finished result, considering it was just my 4th week of CSS.</p>
+            <div class="project-btn-div">
+            <a href="https://speczoptical-by-christyvolosin.netlify.app/" target="_blank">
+            <button class="project-btn" id="project-btn">View Project</button>
+            </a>
+            </div>
           </div>
         </div>
         </div> <!-- modal-bg -->
@@ -341,8 +328,8 @@
         <!-- Portfolio item 3 -->
         <div class="card item3">
           <div class="imgBx">
-          <div class="portfolio__item">
-            <img src="img/ChristyVolosin_Dev_Portfolio.png" alt="" class="portfolio__img" />
+          <div> <!-- was class="portfolio__item" -->
+            <img src="img/ChristyVolosin_Dev_Portfolio.png" alt=""/> <!-- was class="portfolio__img"  -->
           </div>
           </div>
           <div class="content-1">
@@ -376,10 +363,12 @@
               <h4 class="portfolio-subtitle">Subtitle Goes Here</h4>
             </div>
           </div> <!-- /portfolio header -->
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo voluptatem dignissimos aperiam esse numquam tempora molestias facilis explicabo beatae qui expedita, molestiae at, sit a sed! Tenetur esse magnam laudantium dolore, aliquam obcaecati voluptatibus est totam ea sapiente.</p>
-            <a href="https://christy-volosin-portfolio.netlify.app/">
-            <button class="project-btn">View Project</button>
-          </a>
+            <p>This, of course, is my portfolio that you have been looking at. :) I wanted to make a beautiful unique site that would present a professional image. For the header, I created the typical curved header that so many people make, but inverted it so the white part would be the header, and the colorful part would be my intro section. I also added a parallax effect, and a lot of other fun stuff. I had a lot of fun (and learning opportunities) creating this site, and I hope you enjoy it. Of course, you have a choice of which button to click to go back to it. :) </p>
+            <div class="project-btn-div">
+              <a href="https://christy-volosin-portfolio.netlify.app/">
+              <button class="project-btn" id="project-btn">View Project</button>
+              </a>
+          </div>
           </div>
         </div>
         </div> <!-- modal-bg -->
@@ -387,6 +376,7 @@
         </div>
       
       </div>
+      
     </section>
  
 
