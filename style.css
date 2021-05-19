@@ -984,9 +984,19 @@ span {
 }
 
 
-.project-btn-div {
+.modal-1 .project-btn-div {
+  width: 51%;
+  margin: 0.5em auto;
+}
+
+.modal-2 .project-btn-div {
   width: 51%;
   margin: 2em auto;
+}
+
+.modal-3 .project-btn-div {
+  width: 51%;
+  margin: 1em auto;
 }
 
 .portfolio-modal h4 {
