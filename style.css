@@ -852,6 +852,14 @@ span {
   transition: 0.3s ease-in-out;
 }
 
+.portfolio .card .content-1 {
+  position: relative;
+  margin-top: -95px; /* was -140px */
+  text-align: center;
+  top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
 /* Centers things */
 .card {
   align-items: center;
@@ -1413,6 +1421,14 @@ textarea.input {
   .project-btn-div {
     width: 60%;
     margin: 2em auto;
+  }
+  
+  .portfolio .card .content-1 {   
+    margin-top: -100px;    
+  }
+  
+  .item1 .content-1 {
+    padding: 1em 20px 9.5% 20px;
   }
 
   .container {
