@@ -843,7 +843,7 @@ span {
 }
 
 /* This is the text content */
-.portfolio .card .content-1 {
+.portfolio .card .content {
   position: relative;
   margin-top: -80px; /* was -140px */
   /* padding: 1em 20px 20% 20px; */ /* was 10px 20px */
@@ -863,11 +863,11 @@ span {
 }
 
 .item1 .content-1 {
-  padding: 1em 20px 19% 20px;
+  padding: 1em 20px 9.5% 20px;
 }
 
-.item2 .content-1,
-.item3 .content-1 {
+.item2 .content,
+.item3 .content {
   padding: 1em 20px 29% 20px; /* was 10px 20px */
 }
 
