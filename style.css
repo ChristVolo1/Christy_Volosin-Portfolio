@@ -816,7 +816,7 @@ span {
 
 .portfolio .card {
   position: relative;
-  max-width: 280px; /* was max-width: 300px;  height: 400px; */
+  max-width: 280px;
   height: 380px;
   background: #fff;
   margin: 60px 10px; /* was 40px */
@@ -845,8 +845,7 @@ span {
 /* This is the text content */
 .portfolio .card .content {
   position: relative;
-  margin-top: -80px; /* was -140px */
-  /* padding: 1em 20px 20% 20px; */ /* was 10px 20px */
+  margin-top: -80px;  
   text-align: center;
   top: 20px;
   transition: 0.3s ease-in-out;
@@ -854,7 +853,7 @@ span {
 
 .portfolio .card .content-1 {
   position: relative;
-  margin-top: -95px; /* was -140px */
+  margin-top: -95px;
   text-align: center;
   top: 20px;
   transition: 0.3s ease-in-out;
@@ -871,7 +870,7 @@ span {
 }
 
 .item1 .content-1 {
-  padding: 1em 20px 9.5% 20px;
+  padding: 1em 20px 13% 20px;
 }
 
 .item2 .content,
