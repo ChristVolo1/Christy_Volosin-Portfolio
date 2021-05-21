@@ -435,15 +435,9 @@ span {
   }
 }
 
-@media (min-width: 600px) {
-  /* TODO: Fix About Me orange background */
+@media (min-width: 600px) {  
   /* TODO: Fix slow loading of pictures */
-  /* TODO: Fix contact form validation - only the email validation worked*/
-  /* TODO: Write website copy */
-  /* TODO: Fix modal close for last two portfolio items */
-  /* TODO: Fix toggle menu button close Javascript */
-  /* TODO: Fix side scrollbar on website - has to do with Tools section and maybe media queries*/
-  /* TODO: Update actual projects */
+  /* TODO: Fix contact form validation - only the email validation worked*/  
 
   /* Navigation menu changes here*/
 
