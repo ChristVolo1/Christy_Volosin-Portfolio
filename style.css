@@ -611,7 +611,7 @@ span {
   position: relative;
   margin: 0; /* was 100% */
   background-color: var(--clr-dark);
-  background-image: url(img/services-bg.png);
+  background-image: url(img/services-bg-1.png);
   background-size: cover;
   /* background-blend-mode: multiply; */ /* visibility of bg image */
   border: 2px solid var(--clr-accent);
