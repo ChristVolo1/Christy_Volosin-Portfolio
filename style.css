@@ -436,8 +436,9 @@ span {
 }
 
 @media (min-width: 600px) {  
-  /* TODO: Fix slow loading of pictures */
-  /* TODO: Fix contact form validation - only the email validation worked*/  
+  /* TODO: Fix contact form validation*/
+  /* TODO: Figure out how to add a recaptcha that doesn't mess up the contact form */
+  /* TODO: Get MentorHelper project online */
 
   /* Navigation menu changes here*/
 
